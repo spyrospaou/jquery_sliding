@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using slide to show and reveal elements</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script type="text/javascript" src="../jquery-3.0.0.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#slideup").click(function() {
+                $("#theDiv").slideUp(1000);
+            });
+            $("#slidedown").click(function() {
+                $("#theDiv").slideDown(200);
+            });
+            $("#toggle").click(function() {
+                $("#theDiv").slideToggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div#theDiv {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            padding: 20px;
+            background: #b3c8d0;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+        
+        p,
+        span {
+            font-size: 16pt;
+        }
+        
+        button {
+            margin: 5pt 5pt 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+        </ul>
+        <div id="theDiv">
+        </div>
+        <button id="slideup">Slide Up</button>
+        <button id="slidedown">Slide Down</button>
+        <button id="toggle">Toggle Slide</button>
+    </div>
+</body>
+
+</html>
